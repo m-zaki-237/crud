@@ -34,7 +34,7 @@ const Edit = () => {
     const submitForm = async (e) => {
         e.preventDefault()
         try {
-            const res = await axios.put(`http://localhost:8000/api/user/update/${id}`,user)
+            const res = await axios.put(`https://crud-nine-black.vercel.app/api/user/update/${id}`,user)
             if(res.data.success){
                 toast.success(res.data.message)
                 navigate('/')
