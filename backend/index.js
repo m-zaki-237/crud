@@ -9,7 +9,7 @@ dotenv.config()
 app.use(express.json())
 app.use(cors(
     {
-        origin: ['https://crud-nine-black.vercel.app'],
+        origin: ['https://crud-frontend-aldgbzdb0-muhammad-zakrias-projects.vercel.app'],
         methods: ["POST","GET","PUT","DELETE"]
     }
 ))
