@@ -16,7 +16,7 @@ const Create = () => {
     }
     
     try {
-      const res = await axios.post('http://localhost:8000/api/user/register', userData)
+      const res = await axios.post('https://crud-nine-black.vercel.app/api/user/register', userData)
       if (res.data.success) {
         navigate('/')
         toast.success(res.data.message)
