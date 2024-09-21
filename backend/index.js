@@ -7,7 +7,12 @@ import userRouter from './routes/user.route.js'
 const app = express()
 dotenv.config()
 app.use(express.json())
-app.use(cors())
+app.use(cors(
+    {
+        origin: ['https://crud-nine-black.vercel.app'],
+        methods: ["POST","GET","PUT","DELETE"]
+    }
+))
 
 const port = process.env.PORT || 4001
 
