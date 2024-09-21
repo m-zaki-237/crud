@@ -20,7 +20,7 @@ const Edit = () => {
     };
 
     useEffect(() => {
-        axios.get(`http://localhost:8000/api/user/getOne/${id}`)
+        axios.get(`https://crud-nine-black.vercel.app/api/user/getOne/${id}`)
             .then((response) => {
                 console.log("Fetched user data:", response.data);
                 setUser(response.data.user)
